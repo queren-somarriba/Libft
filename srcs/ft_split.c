@@ -6,7 +6,7 @@
 /*   By: qsomarri <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 12:59:52 by qsomarri          #+#    #+#             */
-/*   Updated: 2024/05/30 12:48:54 by qsomarri         ###   ########.fr       */
+/*   Updated: 2024/08/22 17:31:20 by qsomarri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,16 +52,6 @@ static char	*ft_str_index_cpy(const char *s, int index, char c)
 	return (dest);
 }
 
-static void	ft_free_str(char **s)
-{
-	size_t	i;
-
-	i = 0;
-	while (s[i])
-		free(s[i++]);
-	free(s);
-}
-
 static	char	**ft_makesplit(char **dest, const char *s, char c)
 {
 	size_t	i;
@@ -78,7 +68,7 @@ static	char	**ft_makesplit(char **dest, const char *s, char c)
 			dest [j] = ft_str_index_cpy(s, i, c);
 			if (!dest[j])
 			{
-				ft_free_str(dest);
+				ft_free_tab(dest);
 				return (NULL);
 			}
 			j++;
