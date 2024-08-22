@@ -6,7 +6,7 @@
 /*   By: qsomarri <qsomarri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 15:05:01 by qsomarri          #+#    #+#             */
-/*   Updated: 2024/08/22 15:55:19 by qsomarri         ###   ########.fr       */
+/*   Updated: 2024/08/22 17:35:46 by qsomarri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,8 @@ char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+
+void	ft_free_tab(char **s);
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 
