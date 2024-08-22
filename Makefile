@@ -6,7 +6,7 @@
 #    By: qsomarri <qsomarri@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/27 14:37:31 by qsomarri          #+#    #+#              #
-#    Updated: 2024/08/22 16:17:13 by qsomarri         ###   ########.fr        #
+#    Updated: 2024/08/22 16:27:44 by qsomarri         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,16 +68,12 @@ SRCS =	$(SRCS_DIR)/ft_atoi.c \
 	$(SRCS_DIR)/ft_printf.c \
 	$(SRCS_DIR)/ft_printf_utils.c \
 
-OBJ_DIR = obj
 
-OBJS = $(SRCS:$(SRCS_DIR)/%.c=$(OBJ_DIR)/%.o)
+OBJS = $(SRCS:.c=.o)
 
 LINKER = ar rc
 
 RM = rm -f
-
-$(OBJ_DIR)/%.o:	$(SRCS_DIR)/%.c | $(OBJ_DIR)
-		@$(CC) $(CFLAGS) -c $< -o $@
 
 all : $(NAME)
 
