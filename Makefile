@@ -6,7 +6,7 @@
 #    By: qsomarri <qsomarri@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/27 14:37:31 by qsomarri          #+#    #+#              #
-#    Updated: 2024/08/22 16:27:44 by qsomarri         ###   ########.fr        #
+#    Updated: 2024/08/22 17:34:26 by qsomarri         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,6 +32,7 @@ SRCS =	$(SRCS_DIR)/ft_atoi.c \
 	$(SRCS_DIR)/ft_putchar_fd.c \
 	$(SRCS_DIR)/ft_putnbr_fd.c \
 	$(SRCS_DIR)/ft_split.c \
+	$(SRCS_DIR)/ft_free_tab.c \
 	$(SRCS_DIR)/ft_striteri.c \
 	$(SRCS_DIR)/ft_strlen.c \
 	$(SRCS_DIR)/ft_strnstr.c \
